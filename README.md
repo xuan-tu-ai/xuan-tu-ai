@@ -29,55 +29,37 @@
 
 ## 🚀 My Featured Projects
 
-_A selection of projects where I applied my skills in computer vision and machine learning to solve real-world problems._
+_Projects in agentic AI, robotics, computer vision and applied ML, grouped by area._
 
-### 🦾 Vision-Language-Action Robot Arm (Data Impact)
-> **Project Type:** Company project
->
-> I deployed **SmolVLA** with the **LeRobot** framework on an SO-ARM-101 robot arm, using client-server (gRPC) inference on an RTX 4060 Ti GPU, and trained a working pouring policy (200k steps). After diagnosing a frozen text encoder as the grounding bottleneck of the previous XVLA model, I led the switch to SmolVLA and built a **mechanistic interpretability toolkit** (cross-attention maps, SigLIP feature maps, weight-diff, FFN neuron probing) to debug robot behavior. I also designed a **YOLOv11**-based safety module that freezes the robot when a person enters the camera frame.
->
-> <sub>**Tech:** PyTorch, LeRobot, Hugging Face, SigLIP, YOLOv11, gRPC, Weights & Biases</sub>  
-> 🔒 *Company project: code is private.*
+#### 🧠 Agentic AI & Context
 
-### 🏭 Warehouse Forklift Safety Analytics (Data Impact)
-> **Project Type:** Company project for a manufacturing client in Thailand
->
-> I built a pipeline that detects unsafe forklift behavior from fixed CCTV cameras using **YOLO11** pose/detection and **ByteTrack**. A pixel-budget analysis (only 3.8% of frames usable) ruled out an ear-based head-pose approach before any model work. I delivered metric pedestrian-forklift proximity zones from a single camera (**R² = 0.912**), cut false-positive detections from **10/279 to 0/279** frames with a motion filter, and shipped a Streamlit demo.
->
-> <sub>**Tech:** Python, YOLO11, ByteTrack, OpenCV, NumPy, Streamlit</sub>  
-> 🔒 *Company project: code is private.*
+| Repository | Description | Topics |
+|---|---|---|
+| [**carrycode**](https://github.com/xuan-tu-ai/carrycode) | Open implementation of *Pack Light, CarryOn* ([arXiv:2610.18784](https://arxiv.org/abs/2610.18784)), wrapped as a coding agent you run in your own repository. Old history is replaced by a compact, structured checkpoint of the agent's progress; recent steps stay verbatim. Built on mini-swe-agent, with a SWE-bench Verified evaluation harness. **Experimental.** | `coding-agent` `context-management` `llm-agents` `python` |
+| [**dsh-carryon**](https://github.com/xuan-tu-ai/dsh-carryon) | TypeScript port of carrycode's CarryOn runtime as a compaction plugin for DeepSeek Harness: long sessions are folded into validated, versioned records instead of a free-text summary, plus a CarryOn mode in the Web UI. **0.1.0 waits on a real-model release gate.** | `dsh-plugin` `context-management` `typescript` |
 
-### ⚙️ Industrial Sensor Anomaly Detection (Data Impact)
-> **Project Type:** Company project for a manufacturing client in Japan
->
-> I owned an independent research track on weakly supervised (**Multiple Instance Learning**) anomaly detection for multivariate robot sensor time series encoded as images (GAF, MTF, recurrence plots), built on **Databricks/PySpark** (Azure). Sanity baselines I designed exposed a **data-leakage risk** (PR-AUC 0.77 vs. 0.29 random floor), which informed a go/no-go decision. The codebase has 38 integration tests and a YAML config system.
->
-> <sub>**Tech:** Databricks, PySpark, Azure, PyTorch, NumPy, pytest</sub>  
-> 🔒 *Company project: code is private.*
-### 📹 Real-time Violence Detection & Interpretation System
-> **Competition:** AI Thuc Chien 2025 (Gen Viet Team)
->
-> As the Team Leader and MLOps Engineer, I built an end-to-end multi-threaded pipeline integrating **YOLOv8n** (Tracking), **VideoMAE** (Action Recognition), and a **Small Language Model (SLM)** to detect and describe violent behaviors in real-time. I engineered an **automated data annotation pipeline** utilizing pseudo-labeling techniques to process 1,000 videos from the RLVS dataset, generating high-quality text captions for training without manual effort. The entire system was containerized using **Docker** and deployed as **FastAPI** endpoints on **Google Vertex AI** to serve the frontend interface, ensuring scalability and seamless interaction.
->
-> <sub>**Tech:** Python, YOLOv8n, VideoMAE, Docker, FastAPI, Google Vertex AI</sub>  
-> ➡️ **[View Project Details](https://github.com/xuan-tu-ai/ViolenceDetectionApp)**
-> 
-### 🗓️ UniSync – Student Schedule Management Solution
-> **Competition:** NAVER Vietnam AI Hackathon 2025
->
-> I engineered a productivity platform featuring a **Natural Language Processing (NLP)** parser that automates complex event scheduling from unstructured Vietnamese text. By integrating **Gemini 1.5 Flash**, the system performs intelligent data extraction to convert user prompts into structured calendar events. It utilizes **Supabase** for real-time synchronization and is deployed on **Vercel** as a scalable, low-latency solution.
->
-> <sub>**Tech:** React, TypeScript, Gemini AI, Supabase, Vercel, Vite</sub>
+#### 🦾 Physical AI & Robotics
 
-> ➡️ **[View Project Details](https://github.com/xuan-tu-ai/naver-vietnam-ai-hackathon-XuanTu2002)**
+| Repository | Description | Topics |
+|---|---|---|
+| **Vision-Language-Action Robot Arm** 🔒 | Company project at Data Impact: **SmolVLA** with **LeRobot** on an SO-ARM-101 arm, gRPC client-server inference on an RTX 4060 Ti, and a pouring policy trained for 200k steps. Includes a mechanistic interpretability toolkit (cross-attention maps, SigLIP feature maps, weight-diff, FFN neuron probing) and a **YOLOv11** safety module that freezes the robot when a person enters the frame. *Code is private.* | `vla` `lerobot` `interpretability` `pytorch` |
+| [**flora-so101-demo**](https://github.com/xuan-tu-ai/flora-so101-demo) | Streamlit demo that plays an SO-101 beer-pouring episode from the global and wrist cameras in sync with task instructions written by nvidia/Flora-Captioner. | `robotics` `video-captioning` `streamlit` |
 
-### 📈 FinBERT-VCSenti: Financial Sentiment Analysis
-> **Project Type:** Personal Project
->
-> I fine-tuned a `bert-base-uncased` model for sentiment analysis on financial texts using PyTorch and Hugging Face Transformers. By processing and training on the Financial PhraseBank dataset, the model achieved an **Accuracy of 85.5%** and an **F1-Score of 85.5%** on the test set. I then deployed the model as an API service using FastAPI and Docker, making it publicly available for interactive testing on Hugging Face Spaces.
->
-> <sub>**Tech:** PyTorch, Hugging Face Transformers, FastAPI, Docker</sub>  
-> ➡️ **[View Project Details](https://github.com/xuan-tu-ai/FinBERT-VCSenti)**
+#### 👁️ Computer Vision & Applied ML
+
+| Repository | Description | Topics |
+|---|---|---|
+| [**fish-freshness-classification-app**](https://github.com/xuan-tu-ai/fish-freshness-classification-app) | FreshScan AI: fish freshness from eye photos with a Swin-Tiny backbone and dual (average + max) pooling, served by FastAPI on Hugging Face Spaces with a Next.js frontend. Part of the SAMI-HUST research on the FFE dataset. Earlier Streamlit demo: [fish-freshness-classification-web](https://github.com/xuan-tu-ai/fish-freshness-classification-web). | `computer-vision` `swin-transformer` `fastapi` `nextjs` |
+| [**Fish_Freshness_ML**](https://github.com/xuan-tu-ai/Fish_Freshness_ML) | Classical-ML pipeline on deep image features for the same task: LightGBM feature selection, then a grid-searched Extra Trees classifier with saved reports and confusion matrices. | `scikit-learn` `lightgbm` `feature-selection` |
+| [**aoi-defect-classification-model**](https://github.com/xuan-tu-ai/aoi-defect-classification-model) | EfficientNet (PyTorch) pipeline for automated optical inspection (AOI) defect classification on the AIdea AOI dataset, as a Colab notebook. | `defect-detection` `efficientnet` `pytorch` |
+
+#### 🌐 Products & Hackathons
+
+| Repository | Description | Topics |
+|---|---|---|
+| [**UniSync**](https://github.com/xuan-tu-ai/naver-vietnam-ai-hackathon-XuanTu2002) | NAVER Vietnam AI Hackathon 2025: student schedule dashboard (Today, Week, Deadlines) whose AI Quick-Add turns Vietnamese text into calendar events with **Gemini**. Supabase storage, deployed on Vercel ([live demo](https://naver-2025-uni-sync-dpon.vercel.app/)). | `react` `typescript` `gemini` `supabase` |
+| [**questify**](https://github.com/xuan-tu-ai/questify) | RPG-themed personal productivity app: quests earn XP and gold, epic quests end in boss fights, and gold buys real-life rewards. Next.js, TypeScript, Tailwind CSS, Supabase. | `nextjs` `typescript` `supabase` `gamification` |
+| [**mips32-pipelined-cpu**](https://github.com/xuan-tu-ai/mips32-pipelined-cpu) | 5-stage pipelined MIPS32 CPU in Verilog with a forwarding unit and a hazard unit for load-use stalls, simulated on a Fibonacci program and checked in GTKWave. | `verilog` `computer-architecture` `mips` |
 
 ---
 ### 🧠 My Core Expertise & Technical Skills
@@ -108,18 +90,24 @@ My skill set is centered around the AI/ML ecosystem, with a strong supporting fo
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=xuan-tu-ai&show_icons=true&theme=radical&count_private=true" width="47%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xuan-tu-ai&layout=compact&theme=radical&count_private=true&hide=css,html,shell,dockerfile" width="47%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=xuan-tu-ai&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=xuan-tu-ai&show_icons=true&theme=default&include_all_commits=true" />
+    <img alt="GitHub Stats" src="https://github-stats-extended.vercel.app/api?username=xuan-tu-ai&show_icons=true&theme=tokyonight&include_all_commits=true" height="165" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=xuan-tu-ai&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=xuan-tu-ai&theme=default" />
+    <img alt="GitHub Streak" src="https://streak-stats.demolab.com/?user=xuan-tu-ai&theme=tokyonight" height="165" />
+  </picture>
 </p>
 
----
-
-## 📫 Connect with Me
-
 <p align="center">
-  <a href="mailto:nxuantu36@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://github.com/xuan-tu-ai"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
-   <a href="https://www.linkedin.com/in/huy-t%E1%BB%B1-489541248/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=xuan-tu-ai&layout=compact&theme=tokyonight&hide_border=true&hide=css,html,shell,dockerfile" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=xuan-tu-ai&layout=compact&theme=default&hide=css,html,shell,dockerfile" />
+    <img alt="Top Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=xuan-tu-ai&layout=compact&theme=tokyonight&hide_border=true&hide=css,html,shell,dockerfile" height="150" />
+  </picture>
 </p>
 
 ---
