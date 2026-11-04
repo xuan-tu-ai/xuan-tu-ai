@@ -110,6 +110,14 @@ My skill set is centered around the AI/ML ecosystem, with a strong supporting fo
   </picture>
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xuan-tu-ai/xuan-tu-ai/output/contribution-grid-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xuan-tu-ai/xuan-tu-ai/output/contribution-grid.svg" />
+    <img alt="GitHub contributions in the last year" src="https://raw.githubusercontent.com/xuan-tu-ai/xuan-tu-ai/output/contribution-grid.svg" />
+  </picture>
+</p>
+
 ---
 
 <p align="center">
