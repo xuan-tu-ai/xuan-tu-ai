@@ -20,7 +20,7 @@
 
 - 🤖 **AI Engineer** at **Data Impact** (Hanoi), full-time since Sep 2026 after a 5-month internship. I build computer vision, robotics, and anomaly detection systems for manufacturing clients in Thailand and Japan.
 - 🎓 Final-year MIS student at **Hanoi University of Science and Technology (HUST)**.
-- 🔬 Member of **ML Scientific Working Group (SAMI-HUST)**, co-authoring research on fish freshness classification (**88.4%** accuracy on the FFE dataset, above the previous 85.99% benchmark).
+- 🔬 Member of **ML Scientific Working Group (SAMI-HUST)**, co-authoring research on fish freshness classification (**90.97%** accuracy on the FFE dataset, above the previous 85.99% benchmark).
 - 📈 Former **Data Scientist Intern** at Institute of Energy Technology (HUST), working on time-series forecasting and anomaly detection for a solar power plant.
 - 🌏 **Ex-TEEP Intern** at Asia University & Student Researcher at **XiangQi Technology, Inc.** (Taiwan).
 - 🏆 Awarded **Special Performance Award** for 2024 TEEP Program.
