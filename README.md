@@ -24,7 +24,7 @@
 - 📈 Former **Data Scientist Intern** at Institute of Energy Technology (HUST), working on time-series forecasting and anomaly detection for a solar power plant.
 - 🌏 **Ex-TEEP Intern** at Asia University & Student Researcher at **XiangQi Technology, Inc.** (Taiwan).
 - 🏆 Awarded **Special Performance Award** for 2024 TEEP Program.
-- 💬 TOEIC: **930** | Fluent in English & Spoken Chinese.
+- 💬 TOEIC: **930** | Fluent in English & Chinese.
 - 🌱 Interested in Vision-Language-Action models, model interpretability, and deploying AI systems with **MLOps** (Docker, FastAPI, Databricks, Vertex AI).
 
 ## 🚀 My Featured Projects
