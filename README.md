@@ -35,6 +35,7 @@ _Projects in agentic AI, robotics, computer vision and applied ML, grouped by ar
 
 | Repository | Description | Topics |
 |---|---|---|
+| [**harness-audit**](https://github.com/xuan-tu-ai/harness-audit) | **Did that harness change really make the agent better?** Audits the runs of two versions of an agent harness and returns a `PASS` / `PARTIAL` / `FAIL` / `UNKNOWN` verdict, with reasons and numbers, for the four claims an improvement rests on: **Selection, Activation, Attribution, Improvement** (Wei et al., 2026). Checks split leakage and oracle integrity, whether a skill was actually loaded, reached and *followed* (rubric-based adherence over tool-call traces), compute envelope and model-version drift, and gains beyond A/A noise via paired bootstrap and sign-flip tests. Framework-agnostic JSONL input, Claude Agent SDK and OpenAI-compatible runners, HTML/Markdown reports, GitHub Action for CI. Tested against **11 planted-defect scenarios**; real-run results pending. | `agent-evaluation` `llm-agents` `statistics` `python` |
 | [**carrycode**](https://github.com/xuan-tu-ai/carrycode) | Open implementation of *Pack Light, CarryOn* ([arXiv:2610.18784](https://arxiv.org/abs/2610.18784)), wrapped as a coding agent you run in your own repository. Old history is replaced by a compact, structured checkpoint of the agent's progress; recent steps stay verbatim. Built on mini-swe-agent, with a SWE-bench Verified evaluation harness. **Experimental.** | `coding-agent` `context-management` `llm-agents` `python` |
 | [**dsh-carryon**](https://github.com/xuan-tu-ai/dsh-carryon) | TypeScript port of carrycode's CarryOn runtime as a compaction plugin for DeepSeek Harness: long sessions are folded into validated, versioned records instead of a free-text summary, plus a CarryOn mode in the Web UI. **0.1.0 waits on a real-model release gate.** | `dsh-plugin` `context-management` `typescript` |
 
@@ -53,13 +54,11 @@ _Projects in agentic AI, robotics, computer vision and applied ML, grouped by ar
 | [**Fish_Freshness_ML**](https://github.com/xuan-tu-ai/Fish_Freshness_ML) | Classical-ML pipeline on deep image features for the same task: LightGBM feature selection, then a grid-searched Extra Trees classifier with saved reports and confusion matrices. | `scikit-learn` `lightgbm` `feature-selection` |
 | [**aoi-defect-classification-model**](https://github.com/xuan-tu-ai/aoi-defect-classification-model) | EfficientNet (PyTorch) pipeline for automated optical inspection (AOI) defect classification on the AIdea AOI dataset, as a Colab notebook. | `defect-detection` `efficientnet` `pytorch` |
 
-#### 🌐 Products & Hackathons
+#### 🛠️ Developer Tools & MLOps
 
 | Repository | Description | Topics |
 |---|---|---|
-| [**UniSync**](https://github.com/xuan-tu-ai/naver-vietnam-ai-hackathon-XuanTu2002) | NAVER Vietnam AI Hackathon 2025: student schedule dashboard (Today, Week, Deadlines) whose AI Quick-Add turns Vietnamese text into calendar events with **Gemini**. Supabase storage, deployed on Vercel ([live demo](https://naver-2025-uni-sync-dpon.vercel.app/)). | `react` `typescript` `gemini` `supabase` |
-| [**questify**](https://github.com/xuan-tu-ai/questify) | RPG-themed personal productivity app: quests earn XP and gold, epic quests end in boss fights, and gold buys real-life rewards. Next.js, TypeScript, Tailwind CSS, Supabase. | `nextjs` `typescript` `supabase` `gamification` |
-| [**mips32-pipelined-cpu**](https://github.com/xuan-tu-ai/mips32-pipelined-cpu) | 5-stage pipelined MIPS32 CPU in Verilog with a forwarding unit and a hazard unit for load-use stalls, simulated on a Fibonacci program and checked in GTKWave. | `verilog` `computer-architecture` `mips` |
+| [**kgrun**](https://github.com/xuan-tu-ai/kgrun) | Run local Python ML scripts on free **Kaggle GPUs (2× Tesla T4)** with one command: `kgrun run train.py --pull`. Bundles the project, pushes it as a Kaggle kernel through the **official Kaggle API** (no SSH tunnels that break Kaggle's ToS), streams logs live with safe `Ctrl+C` detach, mounts uploaded datasets, and downloads checkpoints and metrics into `runs/<timestamp>/` with a reproducibility stamp (CUDA, PyTorch, driver, git hash, CLI args). | `mlops` `kaggle` `gpu` `cli` `python` |
 
 ---
 ### 🧠 My Core Expertise & Technical Skills
