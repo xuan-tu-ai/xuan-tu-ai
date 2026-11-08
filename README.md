@@ -60,14 +60,6 @@ _Projects in agentic AI, robotics, computer vision and applied ML, grouped by ar
 |---|---|---|
 | [**kgrun**](https://github.com/xuan-tu-ai/kgrun) | Run local Python ML scripts on free **Kaggle GPUs (2× Tesla T4)** with one command: `kgrun run train.py --pull`. Bundles the project, pushes it as a Kaggle kernel through the **official Kaggle API** (no SSH tunnels that break Kaggle's ToS), streams logs live with safe `Ctrl+C` detach, mounts uploaded datasets, and downloads checkpoints and metrics into `runs/<timestamp>/` with a reproducibility stamp (CUDA, PyTorch, driver, git hash, CLI args). | `mlops` `kaggle` `gpu` `cli` `python` |
 
-#### 🌐 Products & Hackathons
-
-| Repository | Description | Topics |
-|---|---|---|
-| [**UniSync**](https://github.com/xuan-tu-ai/naver-vietnam-ai-hackathon-XuanTu2002) | NAVER Vietnam AI Hackathon 2025: student schedule dashboard (Today, Week, Deadlines) whose AI Quick-Add turns Vietnamese text into calendar events with **Gemini**. Supabase storage, deployed on Vercel ([live demo](https://naver-2025-uni-sync-dpon.vercel.app/)). | `react` `typescript` `gemini` `supabase` |
-| [**questify**](https://github.com/xuan-tu-ai/questify) | RPG-themed personal productivity app: quests earn XP and gold, epic quests end in boss fights, and gold buys real-life rewards. Next.js, TypeScript, Tailwind CSS, Supabase. | `nextjs` `typescript` `supabase` `gamification` |
-| [**mips32-pipelined-cpu**](https://github.com/xuan-tu-ai/mips32-pipelined-cpu) | 5-stage pipelined MIPS32 CPU in Verilog with a forwarding unit and a hazard unit for load-use stalls, simulated on a Fibonacci program and checked in GTKWave. | `verilog` `computer-architecture` `mips` |
-
 ---
 ### 🧠 My Core Expertise & Technical Skills
 
