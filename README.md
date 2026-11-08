@@ -35,7 +35,7 @@ _Projects in agentic AI, robotics, computer vision and applied ML, grouped by ar
 
 | Repository | Description | Topics |
 |---|---|---|
-| [**harness-audit**](https://github.com/xuan-tu-ai/harness-audit) | **Did that harness change really make the agent better?** Audits the runs of two versions of an agent harness and returns a `PASS` / `PARTIAL` / `FAIL` / `UNKNOWN` verdict, with reasons and numbers, for the four claims an improvement rests on: **Selection, Activation, Attribution, Improvement** (Wei et al., 2026). Checks split leakage and oracle integrity, whether a skill was actually loaded, reached and *followed* (rubric-based adherence over tool-call traces), compute envelope and model-version drift, and gains beyond A/A noise via paired bootstrap and sign-flip tests. Framework-agnostic JSONL input, Claude Agent SDK and OpenAI-compatible runners, HTML/Markdown reports, GitHub Action for CI. Tested against **11 planted-defect scenarios**; real-run results pending. | `agent-evaluation` `llm-agents` `statistics` `python` |
+| [**harness-audit**](https://github.com/xuan-tu-ai/harness-audit) | Checks whether a change to an agent harness really made the agent better, with a verdict on each of the four claims a reported improvement rests on. | `agent-evaluation` `llm-agents` `statistics` `python` |
 | [**carrycode**](https://github.com/xuan-tu-ai/carrycode) | Open implementation of *Pack Light, CarryOn* ([arXiv:2610.18784](https://arxiv.org/abs/2610.18784)), wrapped as a coding agent you run in your own repository. Old history is replaced by a compact, structured checkpoint of the agent's progress; recent steps stay verbatim. Built on mini-swe-agent, with a SWE-bench Verified evaluation harness. **Experimental.** | `coding-agent` `context-management` `llm-agents` `python` |
 | [**dsh-carryon**](https://github.com/xuan-tu-ai/dsh-carryon) | TypeScript port of carrycode's CarryOn runtime as a compaction plugin for DeepSeek Harness: long sessions are folded into validated, versioned records instead of a free-text summary, plus a CarryOn mode in the Web UI. **0.1.0 waits on a real-model release gate.** | `dsh-plugin` `context-management` `typescript` |
 
@@ -58,7 +58,7 @@ _Projects in agentic AI, robotics, computer vision and applied ML, grouped by ar
 
 | Repository | Description | Topics |
 |---|---|---|
-| [**kgrun**](https://github.com/xuan-tu-ai/kgrun) | Run local Python ML scripts on free **Kaggle GPUs (2× Tesla T4)** with one command: `kgrun run train.py --pull`. Bundles the project, pushes it as a Kaggle kernel through the **official Kaggle API** (no SSH tunnels that break Kaggle's ToS), streams logs live with safe `Ctrl+C` detach, mounts uploaded datasets, and downloads checkpoints and metrics into `runs/<timestamp>/` with a reproducibility stamp (CUDA, PyTorch, driver, git hash, CLI args). | `mlops` `kaggle` `gpu` `cli` `python` |
+| [**kgrun**](https://github.com/xuan-tu-ai/kgrun) | CLI that runs a local Python script on free Kaggle GPUs (2× T4) with one command, through the official Kaggle API. | `mlops` `kaggle` `gpu` `cli` `python` |
 
 ---
 ### 🧠 My Core Expertise & Technical Skills
