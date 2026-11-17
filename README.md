@@ -49,6 +49,7 @@ _Projects in agentic AI, robotics, computer vision, applied ML and full-stack ap
 
 | Repository | Description | Topics |
 |---|---|---|
+| **Robot Sensor Anomaly Detection** 🔒 | Company project at Data Impact for a manufacturing client in Japan: weakly supervised (**Multiple Instance Learning**) anomaly detection on multivariate robot sensor time series encoded as images (GAF, MTF, recurrence plots), built on **Databricks/PySpark** (Azure). Sanity baselines I designed exposed a data-leakage risk (PR-AUC 0.77 vs. a 0.29 random floor), which informed a go/no-go decision. *Code is private.* | `anomaly-detection` `multiple-instance-learning` `time-series` `databricks` |
 | [**fish-freshness-classification-app**](https://github.com/xuan-tu-ai/fish-freshness-classification-app) | FreshScan AI: fish freshness from eye photos with a Swin-Tiny backbone and dual (average + max) pooling, served by FastAPI on Hugging Face Spaces with a Next.js frontend. Part of the SAMI-HUST research on the FFE dataset. Earlier Streamlit demo: [fish-freshness-classification-web](https://github.com/xuan-tu-ai/fish-freshness-classification-web). | `computer-vision` `swin-transformer` `fastapi` `nextjs` |
 | [**Fish_Freshness_ML**](https://github.com/xuan-tu-ai/Fish_Freshness_ML) | Classical-ML pipeline on deep image features for the same task: LightGBM feature selection, then a grid-searched Extra Trees classifier with saved reports and confusion matrices. | `scikit-learn` `lightgbm` `feature-selection` |
 
