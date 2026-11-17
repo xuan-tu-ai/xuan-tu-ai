@@ -42,7 +42,6 @@ _Projects in agentic AI, robotics, computer vision, applied ML and full-stack ap
 | Repository | Description | Topics |
 |---|---|---|
 | **Vision-Language-Action Robot Arm** 🔒 | Company project at Data Impact: **SmolVLA** with **LeRobot** on an SO-ARM-101 arm, gRPC client-server inference on an RTX 4060 Ti, and a pouring policy trained for 200k steps. Includes a mechanistic interpretability toolkit (cross-attention maps, SigLIP feature maps, weight-diff, FFN neuron probing) and a **YOLOv11** safety module that freezes the robot when a person enters the frame. *Code is private.* | `vla` `lerobot` `interpretability` `pytorch` |
-| [**flora-so101-demo**](https://github.com/xuan-tu-ai/flora-so101-demo) | Streamlit demo that plays an SO-101 beer-pouring episode from the global and wrist cameras in sync with task instructions written by nvidia/Flora-Captioner. | `robotics` `video-captioning` `streamlit` |
 
 #### 👁️ Computer Vision & Applied ML
 
@@ -50,7 +49,6 @@ _Projects in agentic AI, robotics, computer vision, applied ML and full-stack ap
 |---|---|---|
 | [**fish-freshness-classification-app**](https://github.com/xuan-tu-ai/fish-freshness-classification-app) | FreshScan AI: fish freshness from eye photos with a Swin-Tiny backbone and dual (average + max) pooling, served by FastAPI on Hugging Face Spaces with a Next.js frontend. Part of the SAMI-HUST research on the FFE dataset. Earlier Streamlit demo: [fish-freshness-classification-web](https://github.com/xuan-tu-ai/fish-freshness-classification-web). | `computer-vision` `swin-transformer` `fastapi` `nextjs` |
 | [**Fish_Freshness_ML**](https://github.com/xuan-tu-ai/Fish_Freshness_ML) | Classical-ML pipeline on deep image features for the same task: LightGBM feature selection, then a grid-searched Extra Trees classifier with saved reports and confusion matrices. | `scikit-learn` `lightgbm` `feature-selection` |
-| [**aoi-defect-classification-model**](https://github.com/xuan-tu-ai/aoi-defect-classification-model) | EfficientNet (PyTorch) pipeline for automated optical inspection (AOI) defect classification on the AIdea AOI dataset, as a Colab notebook. | `defect-detection` `efficientnet` `pytorch` |
 
 #### 📚 EdTech & Full-stack
 
