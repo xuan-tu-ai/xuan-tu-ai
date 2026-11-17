@@ -18,14 +18,12 @@
 
 ## 🧠 About Me
 
-- 🤖 **AI Engineer** at **Data Impact** (Hanoi), full-time since Sep 2026 after a 5-month internship. I build computer vision, robotics, and anomaly detection systems for manufacturing clients in Thailand and Japan.
-- 🎓 Graduated from **Hanoi University of Science and Technology (HUST)**.
-- 🔬 Member of **ML Scientific Working Group (SAMI-HUST)**, co-authoring research on fish freshness classification (**90.97%** accuracy on the FFE dataset, above the previous 85.99% benchmark).
-- 📈 Former **Data Scientist Intern** at Institute of Energy Technology (HUST), working on time-series forecasting and anomaly detection for a solar power plant.
-- 🌏 **Ex-TEEP Intern** at Asia University & Student Researcher at **XiangQi Technology, Inc.** (Taiwan).
-- 🏆 Awarded **Special Performance Award** for 2024 TEEP Program.
-- 💬 TOEIC: **930** | Fluent in English & Chinese.
-- 🌱 Interested in Vision-Language-Action models, model interpretability, and deploying AI systems with **MLOps** (Docker, FastAPI, Databricks, Vertex AI).
+- 🤖 **AI Engineer at Data Impact** (Hanoi) since Sep 2026, after a 5-month internship there. I build computer vision, robotics and anomaly detection systems for manufacturing clients in Thailand and Japan.
+- 🎓 **B.Sc. in Management Information Systems**, Hanoi University of Science and Technology (HUST), CPA **3.4/4.0**.
+- 🔬 Researcher at **SAMI-HUST** (ML Scientific Working Group): co-authoring a fish freshness classification paper that reaches **90.97%** accuracy on the FFE dataset (previous best: 85.99%).
+- 📈 Previously: Data Scientist Intern at the Institute of Energy Technology (HUST), forecasting and anomaly detection for a solar power plant; TEEP intern at Asia University and student researcher at XiangQi Technology, Inc. (Taiwan), receiving the 2024 TEEP **Special Performance Award**.
+- 🌏 TOEIC **930**; fluent in English and Chinese.
+- 🌱 Interested in Vision-Language-Action models, model interpretability, and MLOps (Docker, FastAPI, Databricks, Vertex AI).
 
 ## 🚀 My Featured Projects
 
