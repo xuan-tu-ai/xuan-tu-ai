@@ -29,7 +29,7 @@
 
 ## 🚀 My Featured Projects
 
-_Projects in agentic AI, robotics, computer vision and applied ML, grouped by area._
+_Projects in agentic AI, robotics, computer vision, applied ML and full-stack apps, grouped by area._
 
 #### 🧠 Agentic AI & Context
 
@@ -53,6 +53,12 @@ _Projects in agentic AI, robotics, computer vision and applied ML, grouped by ar
 | [**fish-freshness-classification-app**](https://github.com/xuan-tu-ai/fish-freshness-classification-app) | FreshScan AI: fish freshness from eye photos with a Swin-Tiny backbone and dual (average + max) pooling, served by FastAPI on Hugging Face Spaces with a Next.js frontend. Part of the SAMI-HUST research on the FFE dataset. Earlier Streamlit demo: [fish-freshness-classification-web](https://github.com/xuan-tu-ai/fish-freshness-classification-web). | `computer-vision` `swin-transformer` `fastapi` `nextjs` |
 | [**Fish_Freshness_ML**](https://github.com/xuan-tu-ai/Fish_Freshness_ML) | Classical-ML pipeline on deep image features for the same task: LightGBM feature selection, then a grid-searched Extra Trees classifier with saved reports and confusion matrices. | `scikit-learn` `lightgbm` `feature-selection` |
 | [**aoi-defect-classification-model**](https://github.com/xuan-tu-ai/aoi-defect-classification-model) | EfficientNet (PyTorch) pipeline for automated optical inspection (AOI) defect classification on the AIdea AOI dataset, as a Colab notebook. | `defect-detection` `efficientnet` `pytorch` |
+
+#### 📚 EdTech & Full-stack
+
+| Repository | Description | Topics |
+|---|---|---|
+| [**Readly**](https://github.com/xuan-tu-ai/Readly) | AI-guided reading app for Vietnamese grade-12 literature: staged questions with rubric-based AI feedback, streaks and badges, teacher dashboards with a class highlight map, and AI-drafted content for admins. Next.js 16 + PostgreSQL with a pg-boss worker, installable as a PWA. **[Live demo](https://readly-production-3cec7280.up.railway.app)**. | `nextjs` `typescript` `postgresql` `llm` `edtech` |
 
 #### 🛠️ Developer Tools & MLOps
 
